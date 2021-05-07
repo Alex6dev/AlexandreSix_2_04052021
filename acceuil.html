@@ -7,39 +7,45 @@
         <title>reservia <img src="logo/Reservia.svg" alt="logo Reservia"></title>
     </head>
     <header>
-        <a href="acceuil.html" ><img src="logo/Reservia@3x.png" alt="logo Reservia"></a>            
-        <nav>
-            <a href="#hebergements">Hébergement</a>
-            <a href="#activites">Activités</a>
-            <a href="s'inscrire">S'inscrire</a> <!-- rajouter lien vers page inscription-->
-        </nav>
+        <div class="en-tete">
+            <a href="acceuil.html" ><img src="logo/Reservia-3x_mini.png" alt="logo Reservia"></a>            
+            <nav class="menu">
+                <a href="#hebergements" class="lien_bleu" class="lien_barre_bleu">Hébergement</a>
+                <a href="#activites">Activités</a>
+                <a href="s'inscrire" class="lien_bleu">S'inscrire</a> <!-- rajouter lien vers page inscription-->
+            </nav>
+        </div>
     </header>
     <body>
-        <h1>
-            Trouvez votre hébergement pour des vacances de rêve
-        </h1>
-        <p>
-            En plein centre ville ou en pleine nature
-        </p>
-        <form method="post" action=""> <!-- rajouter lien vers back-end -->
-            <i class="fas fa-map-marker-alt"><input type="text" name="localisation" id="localisation" value="Marseille"></i>
-            <input type="submit" value="Recherche">
-        </form>
         <section>
-            <div>
+            <h1>
+                Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <p class="information">
+                En plein centre ville ou en pleine nature
+            </p>
+            <div class="">
+                <form method="post" action="" class="formulaire"> <!-- rajouter lien vers back-end -->
+                    <i class="fas fa-map-marker-alt"><input type="text" name="localisation" id="localisation" value="Marseille, France" ></i>
+                    <input type="submit" value="Recherche">
+                </form>
+            </div>
+        </section>
+        <section>
+            <div >
                 <p>Filtres</p>
                 <a href=""><i class="fas fa-money-bill-wave"></i>Économique</a> <!--rajouter lien pour faire fonctionner le bouton-->
                 <a href=""><i class="fas fa-child"></i>Familial</a><!--rajouter lien pour faire fonctionner le bouton-->
                 <a href=""><i class="fas fa-heart"></i>Romantique</a><!--rajouter lien pour faire fonctionner le bouton-->
                 <a href=""><i class="fas fa-dog"></i>Animaux autorisés</a><!--rajouter lien pour faire fonctionner le bouton-->
             </div>
-             <p><i class="fas fa-info-circle"></i>
+             <p class="information" ><i class="fas fa-info-circle"></i>
                 Plus de 500 logements sont disponibles dans cette ville
              </p>
         </section>
-        <section>
-            <h2>Hébergements à Marseille</h2>
-            <div>
+        <section class="box_hebergements">
+            <h2 id="hebergements">Hébergements à Marseille</h2>
+            <div >
                 <img src="" alt="photo Auberge de la Cannebière">
                 <h3>Auberge de la Cannebière</h3>
                 <p>Nuit à partir de <em>25€</em> </br>
@@ -83,9 +89,10 @@
             </div>
             <p>Afficher plus</p>
         </section>
-        <section>
-            <div><h2>Les plus populaires</h2>
-            <i class="fas fa-chart-line"></i>
+        <section class="box_populaires" >
+            <div>
+                <h2>Les plus populaires</h2>
+                <i class="fas fa-chart-line"></i>
             </div>
             <div>
                 <img src="" alt="Hôtel Le soleil du matin">
@@ -109,8 +116,8 @@
                 </p>
             </div>
         </section>
-        <section>
-            <h2>Activités à Marseille</h2>
+        <section class="box_activites">
+            <h2 id="activites" >Activités à Marseille</h2>
             <div>
                 <img src="" alt="photo du vieux port">
                 <h3>Vieux Port</h3>
