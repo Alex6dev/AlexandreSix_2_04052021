@@ -3,24 +3,12 @@ html {
 }
 @font-face {
     font-family: "Raleway" ;
-    src: url(fonts/Raleway-Thin.ttf); 
-    src: url(fonts/Raleway-ExtraLight.ttf); 
-    src: url(fonts/Raleway-Light.ttf);
-    src: url(fonts/Raleway-Regular.ttf); 
-    src: url(fonts/Raleway-Medium.ttf);
-    src: url(fonts/Raleway-SemiBold.ttf); 
-    src: url(fonts/Raleway-Bold.ttf);
-    src: url(fonts/Raleway-ExtraBold.ttf); 
-    src: url(fonts/Raleway-Black.ttf) ;
-    src: url(fonts/Raleway-ThinItalic.ttf); 
-    src: url(fonts/Raleway-ExtraLightItalic.ttf) ;
-    src: url(fonts/Raleway-LightItalic.ttf) ;
-    src: url(fonts/Raleway-Italic.ttf) ;
-    src: url(fonts/Raleway-MediumItalic.ttf); 
-    src: url(fonts/Raleway-SemiBoldItalic.ttf); 
-    src: url(fonts/Raleway-BoldItalic.ttf) ;
-    src: url(fonts/Raleway-ExtraBoldItalic.ttf); 
-    src: url(fonts/Raleway-BlackItalic.ttf) ;
+    src: url(fonts/Raleway-Thin.ttf), url(fonts/Raleway-ExtraLight.ttf), url(fonts/Raleway-Light.ttf), 
+        url(fonts/Raleway-Regular.ttf), url(fonts/Raleway-Medium.ttf), url(fonts/Raleway-SemiBold.ttf),
+        url(fonts/Raleway-Bold.ttf), url(fonts/Raleway-ExtraBold.ttf),url(fonts/Raleway-Black.ttf) ,
+        url(fonts/Raleway-ThinItalic.ttf), url(fonts/Raleway-ExtraLightItalic.ttf) ,url(fonts/Raleway-LightItalic.ttf) ,
+        url(fonts/Raleway-Italic.ttf) , url(fonts/Raleway-MediumItalic.ttf), url(fonts/Raleway-SemiBoldItalic.ttf), 
+        url(fonts/Raleway-BoldItalic.ttf) , url(fonts/Raleway-ExtraBoldItalic.ttf), url(fonts/Raleway-BlackItalic.ttf) ;
 }
 
 p {
@@ -30,7 +18,7 @@ p {
 h1 {
     font-family: "Raleway",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 900;
 }
 
 h2 {
@@ -63,16 +51,13 @@ a {
 }
 
 nav a {
-    padding-top: 25px ;
+    padding: 25px 10px 0 10px;
 }
 
-.lien_bleu{
-    color: #0065FC;
+nav a:hover{
+    border-top: 2px solid #0065FC;
+    color:#0065FC;
 }
-
-.lien_barre_bleu{
-    border: 50px solid #0065FC;
-}                                           /* mettre la barre bleu*/
 
 .formulaire {
     width: 280px;
@@ -83,16 +68,156 @@ nav a {
     width: 275px;
 }
 
-.maps{
-    border-color: #F2F2F2;
+.logo_maps{
+    padding: 5px ;
+}
+
+.maps_marker{
+    padding: 5px ;
 }
 
 .information {
-    color: #F2F2F2;
+    font-weight: 500;
+}
+.box_recherche{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F2F2F2 ;
+    width: min-content;
+    height: 35px;
+    border-radius: 10px ;
+    
+}
+#localisation { 
+    border: #F2F2F2 solid 1px ;
+}
+.bouton_recherche{
+    background-color: #0065FC;
+    color: white;
+    width: min-content;
+    border-radius: 0 10px 10px 0 ;
+    border: none;
+}
+.box_filtres{ 
+    margin-top: 20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+}
+.lien_economique:hover{
+    background-color: #DEEBFF;
+}
+.lien_economique{
+    margin: 0px 30px 0 15px ;
+    border: #F2F2F2 solid 2px ;
+    border-radius: 30px  ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+#logo_eco{
+    height: 20px;
+    margin: 0 15px 0 0 ;
+    padding: 15px;
+    background-color: #DEEBFF ;
+    border-radius: 30px  ;
+}
+.bouton_eco {
+    padding: 0 10px 0 0;
+    background-color: white;
+    border: none;
+    border-radius: 30px  ;
+}
+.bouton_eco:hover{
+    background-color: #DEEBFF;
 }
 
+.lien_familial:hover{
+    background-color: #DEEBFF;
+}
+.lien_familial{
+    margin: 0px 30px 0 15px ;
+    border: #F2F2F2 solid 2px ;
+    border-radius: 30px  ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+#logo_familial{
+    height: 20px;
+    margin: 0 15px 0 0 ;
+    padding: 15px;
+    background-color: #DEEBFF ;
+    border-radius: 30px  ;
+}
+.bouton_familial {
+    padding: 0 10px 0 0;
+    background-color: white;
+    border: none;
+    border-radius: 30px  ;
+}
+.bouton_familial:hover{
+    background-color: #DEEBFF;
+}
+
+.lien_romantique:hover{
+    background-color: #DEEBFF;
+}
+.lien_romantique{
+    margin: 0px 30px 0 15px ;
+    border: #F2F2F2 solid 2px ;
+    border-radius: 30px  ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+#logo_romantique{
+    height: 20px;
+    margin: 0 15px 0 0 ;
+    padding: 15px;
+    background-color: #DEEBFF ;
+    border-radius: 30px  ;
+}
+.bouton_romantique {
+    padding: 0 10px 0 0;
+    background-color: white;
+    border: none;
+    border-radius: 30px  ;
+}
+.bouton_romantique:hover{
+    background-color: #DEEBFF;
+}
+.lien_animaux:hover{
+    background-color: #DEEBFF;
+}
+.lien_animaux{
+    margin: 0px 30px 0 15px ;
+    border: #F2F2F2 solid 2px ;
+    border-radius: 30px  ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+#logo_animaux{
+    height: 20px;
+    margin: 0 15px 0 0 ;
+    padding: 15px;
+    background-color: #DEEBFF ;
+    border-radius: 30px  ;
+}
+.bouton_animaux {
+    padding: 0 10px 0 0;
+    background-color: white;
+    border: none;
+    border-radius: 30px  ;
+}
+.bouton_animaux:hover{
+    background-color: #DEEBFF;
+}
 .box_hebergements {
     background-color: #F2F2F2 ;
+
 }
 
 .box_populaires{

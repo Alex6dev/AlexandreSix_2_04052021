@@ -10,8 +10,8 @@
         <div class="en-tete">
             <a href="acceuil.html" ><img src="logo/Reservia-3x_mini.png" alt="logo Reservia"></a>            
             <nav class="menu">
-                <a href="#hebergements" class="lien_bleu" class="lien_barre_bleu">Hébergement</a>
-                <a href="#activites">Activités</a>
+                <a href="#hebergements" class="lien_bleu">Hébergement</a>
+                <a href="#activites" class="lien_bleu">Activités</a>
                 <a href="s'inscrire" class="lien_bleu">S'inscrire</a> <!-- rajouter lien vers page inscription-->
             </nav>
         </div>
@@ -24,20 +24,21 @@
             <p class="information">
                 En plein centre ville ou en pleine nature
             </p>
-            <div class="">
+            <div class="box_recherche">
                 <form method="post" action="" class="formulaire"> <!-- rajouter lien vers back-end -->
-                    <i class="fas fa-map-marker-alt"><input type="text" name="localisation" id="localisation" value="Marseille, France" ></i>
-                    <input type="submit" value="Recherche">
+                    <label for="localisation" class="logo_maps"><i class="fas fa-map-marker-alt" id="map_marker"></i></label>
+                    <input type="text" name="localisation" id="localisation" value="Marseille, France" >
+                    <input type="button" value="Recherche" class="bouton_recherche">
                 </form>
             </div>
         </section>
         <section>
-            <div >
+            <div class="box_filtres" >
                 <p>Filtres</p>
-                <a href=""><i class="fas fa-money-bill-wave"></i>Économique</a> <!--rajouter lien pour faire fonctionner le bouton-->
-                <a href=""><i class="fas fa-child"></i>Familial</a><!--rajouter lien pour faire fonctionner le bouton-->
-                <a href=""><i class="fas fa-heart"></i>Romantique</a><!--rajouter lien pour faire fonctionner le bouton-->
-                <a href=""><i class="fas fa-dog"></i>Animaux autorisés</a><!--rajouter lien pour faire fonctionner le bouton-->
+                <div class="lien_economique"><i class="fas fa-money-bill-wave" id="logo_eco"></i><input type="button" value="Économique" class="bouton_eco">  </div><!--rajouter lien pour faire fonctionner le bouton-->
+                <div class="lien_familial"><i class="fas fa-child" id="logo_familial"></i><input type="button" value="Familial" class="bouton_familial"> </div><!--rajouter lien pour faire fonctionner le bouton-->
+                <div class="lien_romantique"><i class="fas fa-heart" id="logo_romantique"></i><input type="button" value="Romantique" class="bouton_romantique"></div><!--rajouter lien pour faire fonctionner le bouton-->
+                <div class="lien_animaux"><i class="fas fa-dog"id="logo_animaux"></i><input type="boutton"value="Animaux autorisés"class="bouton_animaux"></div><!--rajouter lien pour faire fonctionner le bouton-->
             </div>
              <p class="information" ><i class="fas fa-info-circle"></i>
                 Plus de 500 logements sont disponibles dans cette ville
