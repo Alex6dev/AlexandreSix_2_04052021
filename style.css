@@ -44,6 +44,8 @@ h3 {
 
 li{
     padding-top: 20px;
+    width: 150px;
+    text-align: center;
 }
 a {
     color: black;
@@ -52,12 +54,13 @@ a {
 
 nav a {
     padding-top: 20px;
+    width: 150px;
 }
-
-nav a:hover{
+nav li:hover{
     border-top: 2px solid #0065FC;
     color:#0065FC;
 }
+
 #en_plein{
     padding: 0;
 }
@@ -213,6 +216,7 @@ main{
 .hébergements_populaires {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .box_hébergements {
@@ -259,7 +263,6 @@ main{
     justify-content: space-around;
 }
 
-
 #star_bleu {
     color:#0065FC;
 }
@@ -290,7 +293,7 @@ main{
 .box_populaires p{
     margin: 0;
 }
-.box_populaires_liens {
+.box_liens {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -343,6 +346,7 @@ main{
 }
 .box_superposer{
     width: 20%;
+    height: 450px;
     margin-right: 40px;
 }
 .box_activites_largeur1{
@@ -367,7 +371,7 @@ main{
 }
 .box_activites_largeur2{
     width: 100%;
-    height: 37.55%;
+    height: 46%;
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 20px 1px #e5e6e7de;
@@ -386,6 +390,7 @@ main{
     padding: 15px;
 }
 .box_footer {
+    margin-top: 60px;
     background-color: #F2F2F2 ;
     display: flex;
     flex-direction: row;
@@ -404,7 +409,45 @@ main{
     padding-right: 300px;
     
 }
-@media all and (min-width: 1024px) and(max:1280px){
-    
+@media screen and (max-width:1280px) {
+    .box_hébergements{
+        min-width: none;
+        width: 80%;
+    }
+    .box_populaires{
+        margin-top: 30px;
+        width: 80%;
+    }
+    .box_populaires_liens{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;   
+    }
+    .box_liens {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28%;
+        height: 250px;
+
+    }
+    .photo_populaires_liens{
+        width: 98%;
+        height: 60%;
+        border-radius: 15px 15px 0 0;
+    }
+    .texte_populaires{
+        height: 40%;
+    }
+    .box_footer{
+        justify-content: space-between;
+
+    }
+    .box_a_propos{
+        padding: 0;
+    }    
+    .box_nos_hébergements{
+        padding: 0;
+    }
 }
-    
