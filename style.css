@@ -404,6 +404,7 @@ main{
     padding-right: 300px;
     
 }
-.box_assistance{
+@media all and (min-width: 1024px) and(max:1280px){
     
 }
+    
