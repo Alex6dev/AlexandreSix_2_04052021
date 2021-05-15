@@ -124,6 +124,9 @@ main{
 #filtres {
     font-weight: 800 ;
 }
+#filtres_mobile{
+    height: 60px;
+}
 
 .box_filtres{ 
     margin-top: 20px ;
@@ -139,8 +142,9 @@ main{
     margin: 0px 30px 0 15px ;
     border: #F2F2F2 solid 2px ;
     border-radius: 30px  ;
-    width: 180px;
+    
     font-weight: 800 ;
+    padding: 13px 20px 15px 0 ;
 }
 #logo_eco{
     height: 20px;
@@ -156,16 +160,16 @@ main{
     background-color: #DEEBFF;
 }
 .lien_familial{
-    text-align: justify;
-    margin: 0px 30px 0 15px ;
+    padding: 13px 20px 15px 0;
     border: #F2F2F2 solid 2px ;
     border-radius: 30px  ;
-    width: 145px;
     font-weight: 800 ;
+    margin-right: 30px;
 }
 #logo_familial{
     height: 20px;
     width: 20px;
+    text-align: center ;
     margin: 0 15px 0 0 ;
     padding: 15px;
     background-color: #DEEBFF ;
@@ -178,14 +182,14 @@ main{
     background-color: #DEEBFF;
 }
 .lien_romantique{
-    text-align: justify;
-    margin: 0px 30px 0 15px ;
+    padding: 13px 20px 15px 0;
     border: #F2F2F2 solid 2px ;
     border-radius: 30px  ;
-    width: 175px ;
     font-weight: 800 ;
+    margin-right: 30px;
 }
 #logo_romantique{
+    text-align: center ;
     height: 20px;
     margin: 0 15px 0 0 ;
     padding: 15px;
@@ -198,16 +202,17 @@ main{
     background-color: #DEEBFF;
 }
 .lien_animaux{
-    text-align: justify;
-    margin: 0px 30px 0 15px ;
+    
     border: #F2F2F2 solid 2px ;
     border-radius: 30px  ;
     width: 230px ;
     font-weight: 800 ;
+    padding: 13px 20px 15px 0;
+    
 }
 #logo_animaux{
     height: 20px;
-    margin: 0 15px 0 0 ;
+    text-align: center;
     padding: 15px;
     background-color: #DEEBFF ;
     border-radius: 30px  ;
@@ -246,6 +251,13 @@ main{
 }
 .box_hébergements_à_ville p{
     margin: 0;
+    padding-left: 20px;
+}
+.box_hébergements_à_ville h3{
+    padding-left: 20px;
+}
+.étoiles{
+    padding-left: 20px;
 }
 .box_hébergements_liens {
     display: flex;
@@ -468,13 +480,14 @@ main{
 @media screen and (max-width: 1024px) {
     h1{
         font-size: 50px;
-        margin-bottom: 20px;
+        margin: 0 0 20px 50px;
+        width: 80%;
     }
     h2{
         font-size: 55px;
     }
     h3{
-        /*à voir pour le font-size*/
+        font-size: 40px ;
     }
     p{
         font-size: 20px;
@@ -518,12 +531,13 @@ main{
         border-top: 0;
     }
     #en_plein{
-        margin: 0 0 60px 0;
+        margin: 0 0 60px 50px;
 
     }
     .box_recherche{
         width: 95%;
         height: 100px;
+        margin-left: 50px;
     }
     #formulaire{
         width: 100%;
@@ -555,5 +569,209 @@ main{
         border-radius: 0 10px 10px 0 ;
         border: none;
 
+    }
+    .box_filtres{
+        flex-direction: column;
+    }
+    #filtres {
+        font-size: 30px;
+        height: 50px;
+    } 
+    .box_filtres{
+        height: 620px;
+    }
+    #filtres_mobile{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 500px;
+    }
+    .lien_eco{
+        width: 370px;
+        height: 60px;
+        border-radius: 50px;
+        padding: 0 0 20px 0 ;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #logo_eco{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    .lien_familial{
+        width: 280px;
+        height: 60px;
+        border-radius: 50px;
+        padding: 0 0 20px 0;
+    }
+    #logo_familial{
+        width: 50px;
+        height: 50px;
+        text-align: center; 
+        border-radius: 50px;
+    }
+    .lien_romantique{
+        width: 360px;
+        height: 60px;
+        border-radius: 50px;
+        margin: 0 100px 0 0;
+        padding: 0 0 20px 0;
+    }
+    #logo_romantique{
+        width: 50px;
+        height: 50px;
+        text-align: center; 
+        border-radius: 50px; 
+    }
+    .lien_animaux{
+        width: 500px;
+        height: 60px;
+        border-radius: 50px;
+        padding: 0 0 20px 0;
+    }
+    #logo_animaux{
+        width: 50px;
+        height: 50px;
+        text-align: center; 
+        border-radius: 50px;
+    }
+    .fas.fa-info {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .information{
+        margin-left: 50px;
+    }
+    
+    .box_populaires{
+        order: 1;
+        border-radius: 0;
+        width: 100%;
+        padding-left: 50px;
+    }
+    .fas.fa-chart-line{
+        font-size: 50px;
+        padding-top: 50px;    
+    }
+    .box_populaires_liens{
+        flex-direction: column;
+    }
+    .box_liens{
+        width: 95%;
+        height: 350px;
+        margin-left: 0;
+        flex-direction: row;
+        border-radius: 30px;
+    }
+    .photo_populaires_liens{
+        width: 40%;
+        height: 92%;
+        border-radius: 30px 0 0 30px;
+        padding: 15px;
+    }
+    .texte_populaires{
+        height: 100%;
+        width: 55%;
+    }
+    .fas.fa-star{
+        font-size: 25px;
+    }
+    .box_hébergements{
+        order: 2;
+        background-color: white;
+        width: 100%;
+    }
+    .box_hébergements_à_ville{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .box_hébergements_liens{
+        width: 95%;
+        height: 450px;
+        border-radius: 30px;
+    }
+    .photo_hébergements_liens{
+        width: 97%;
+        padding: 10px;
+        border-radius: 30px 30px 0 0 ;
+    }
+    .hébergements_populaires p{
+        font-size: 30px;
+    }
+    .texte_hébergements{
+        padding-bottom: 10px;
+    }
+    .afficher_plus{
+        margin-top: 60px;
+    }
+    #activites{
+        margin-right:60px;
+    }
+    .box_activites{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+    .box_activites_hauteur{
+        width: 90%;
+        border-radius: 30px;
+        margin-top: 50px;
+    }
+    .photo_activites_hauteur{
+        width: 100%;
+        height: 75%;
+        border-radius: 30px 30px 0 0;
+    }
+    .box_activites h3{
+        padding: 30px 0 0 30px;
+    }
+    .box_superposer{
+        width: 90%;
+        height: 1000px;
+        margin-top: 50px;
+        
+    }
+    .box_activites_largeur1{
+        height: 470px;
+        margin-bottom: 50px;
+        border-radius: 30px ;
+    }
+    #photo_fort_de_promègues{
+        height: 75%;
+        border-radius: 30px 30px 0 0 ;
+    }
+    #photo_îles_du_frioul{
+        height: 75%;
+        border-radius: 30px 30px 0 0;
+    }
+    .box_activites_largeur2{
+        margin-bottom: 50px;
+        border-radius: 30px;
+        height: 470px;
+    }
+    .photo_activites_largeur2{
+        height: 75%;
+        border-radius: 30px 30px 0 0;
+    }
+    .box_footer{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .box_a_propos{
+        margin: 70px 0 60px 90px ;
+    }
+    .box_nos_hébergements{
+        margin: 0 0 60px 90px ;
+    }
+    .box_assistance{
+        margin: 0 0 60px 90px ;
+    }
+    .box_footer p{
+        line-height: 80px;
     }
 }
