@@ -1,5 +1,5 @@
 
-
+/*---------------------------------------------partie font------------------------------------------------*/
 p {
     font-family: "Raleway",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -20,24 +20,31 @@ h3 {
     margin: 0;
     font-size: 15px;
 }
+
 a{
     font-family: "Raleway",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 } 
-.box_logo{
+
+/*------------------------------------------partie logo et menu--------------------------------------------*/
+#box_logo{
     width: 50%;
 }
+
 #logo_en-tête{
     width: 15%;
 }
+
 .en-tête {
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
     margin-left: 30px;    
 }
+
 #box_menu{
     width: 40%;
 }
+
 .menu {
     
     margin: 0;
@@ -53,6 +60,7 @@ li{
     width: 150px;
     text-align: center;
 }
+
 a {
     color: black;
     text-decoration: none;
@@ -63,6 +71,7 @@ nav a {
     width: 150px;
     color:inherit
 }
+
 nav li:hover{
     border-top: 2px solid #0065FC;
     color:#0065FC;
@@ -71,12 +80,16 @@ nav li:hover{
 #en_plein{
     padding: 0;
 }
+
 #s_inscrire{
     color: #0065FC;
 }
+
 .menu_mobile{
     display: none;
 }
+
+/*----------------------------------------------section recherche-----------------------------------------*/
 main{
     margin-left: 30px;
 
@@ -90,14 +103,13 @@ main{
     width: 275px;
 }
 
-
 #maps_marker{
     text-align: center;
     width: 30px;
     padding-top: 10px  ;
 }
 
-.box_recherche{
+#box_recherche{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -107,10 +119,12 @@ main{
     border-radius: 10px ;
     
 }
+
 #localisation { 
     border: #F2F2F2 solid 1px ;
     padding-left: 15px;
 }
+
 .bouton_recherche{
     background-color: #0065FC;
     color: white;
@@ -118,12 +132,16 @@ main{
     border-radius: 0 10px 10px 0 ;
     border: none;
 }
+
 #bouton{
     display: none;
 }
+
+/*---------------------------------------------section filtres---------------------------------------------*/
 #filtres {
     font-weight: 800 ;
 }
+
 #filtres_mobile{
     height: 60px;
 }
@@ -134,9 +152,11 @@ main{
     flex-direction: row;
     justify-content: flex-start ;
 }
+
 .lien_eco:hover{
     background-color: #DEEBFF;
 }
+
 .lien_eco{
     text-align: justify;
     margin: 0px 30px 0 15px ;
@@ -146,6 +166,7 @@ main{
     font-weight: 800 ;
     padding: 13px 20px 15px 0 ;
 }
+
 #logo_eco{
     height: 20px;
     margin: 0 15px 0 0 ;
@@ -155,10 +176,10 @@ main{
     color: #0065FC;
 }
 
-
 .lien_familial:hover{
     background-color: #DEEBFF;
 }
+
 .lien_familial{
     padding: 13px 20px 15px 0;
     border: #F2F2F2 solid 2px ;
@@ -166,6 +187,7 @@ main{
     font-weight: 800 ;
     margin-right: 30px;
 }
+
 #logo_familial{
     height: 20px;
     width: 20px;
@@ -177,10 +199,10 @@ main{
     color: #0065FC;
 }
 
-
 .lien_romantique:hover{
     background-color: #DEEBFF;
 }
+
 .lien_romantique{
     padding: 13px 20px 15px 0;
     border: #F2F2F2 solid 2px ;
@@ -188,6 +210,7 @@ main{
     font-weight: 800 ;
     margin-right: 30px;
 }
+
 #logo_romantique{
     text-align: center ;
     height: 20px;
@@ -210,6 +233,7 @@ main{
     padding: 13px 20px 15px 0;
     
 }
+
 #logo_animaux{
     height: 20px;
     text-align: center;
@@ -219,10 +243,10 @@ main{
     color: #0065FC;
 }
 
-
 .information {
     padding: 15px 0 15px 0;
 }
+
 .fas.fa-info {
     text-align: center;
     width: 20px;
@@ -231,34 +255,43 @@ main{
     border: 1px solid grey;
     border-radius: 100px;
 }
-.hébergements_populaires {
+
+/*-----------------------------------section hébergements + populaires---------------------------------------*/
+#hébergements_populaires {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.box_hébergements {
+
+/*------------------------------------------section hébergements---------------------------------------------*/
+#box_hébergements {
     background-color: #F2F2F2 ;
     width: 60% ;
     border-radius: 15px;
     padding: 15px 15px 15px 35px;
 }
-.box_hébergements_à_ville{ 
+
+#box_hébergements_à_ville{ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
 }
-.box_hébergements_à_ville p{
+
+#box_hébergements_à_ville p{
     margin: 0;
     padding-left: 20px;
 }
-.box_hébergements_à_ville h3{
+
+#box_hébergements_à_ville h3{
     padding-left: 20px;
 }
+
 .étoiles{
     padding-left: 20px;
 }
+
 .box_hébergements_liens {
     display: flex;
     flex-direction: column;
@@ -272,6 +305,7 @@ main{
     box-shadow: 1px 1px 20px 1px #e5e6e7de;
 
 }
+
 .photo_hébergements_liens {
     
     width: 99.5%;
@@ -281,6 +315,7 @@ main{
     object-fit: cover;
 
 }
+
 .texte_hébergements{
     height: 50%;
     display: flex;
@@ -295,29 +330,34 @@ main{
 #star_gris{
     color:#F2F2F2;
 }
-.afficher_plus{
+
+#afficher_plus{
     margin: 20px;
     font-weight: 800;
 }
 
-
-.box_populaires{
+/*---------------------------------------aside populaires-----------------------------------------------*/
+#box_populaires{
     background-color: #F2F2F2;
     width: 30%;
     border-radius: 15px;
     padding: 15px 15px 15px 35px;
 }
-.box_titre_populaires{
+
+#box_titre_populaires{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .fas.fa-chart-line{
     padding-top: 20px;
 }
-.box_populaires p{
+
+#box_populaires p{
     margin: 0;
 }
+
 .box_liens {
     display: flex;
     flex-direction: row;
@@ -330,6 +370,7 @@ main{
     
 
 }
+
 .photo_populaires_liens {
     
     width: 35%;
@@ -337,6 +378,7 @@ main{
     padding: 4px;
     object-fit: cover;
 }
+
 .texte_populaires{
     display: flex;
     flex-direction: column;
@@ -344,15 +386,18 @@ main{
     margin-left: 10px;
 }
 
-.box_activites{
+/*--------------------------------------aside activites---------------------------------------------------*/
+#box_activites{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 #activites{
     padding-top:30px;
 }
+
 .box_activites_hauteur{
     width: 20%;
     height: 450px;
@@ -362,6 +407,7 @@ main{
     box-shadow: 1px 1px 20px 1px #e5e6e7de;
     border-radius: 15px;
 }
+
 .photo_activites_hauteur{
     width: 100%;
     height: 88%;
@@ -374,6 +420,7 @@ main{
     height: 450px;
     margin-right: 40px;
 }
+
 .box_activites_largeur1{
     width: 100%;
     display: flex;
@@ -382,18 +429,22 @@ main{
     border-radius: 15px;
     margin-bottom: 40px;
 }
+
 .photo_activites_largeur1{
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
-}  
+} 
+
 #photo_fort_de_promègues{
     height: 196px;
 
 }
+
 #photo_îles_du_frioul{
     height: 116px;
 }
+
 .box_activites_largeur2{
     width: 100%;
     height: 46%;
@@ -411,10 +462,12 @@ main{
     border-radius: 15px 15px 0 0;
 }
 
-.box_activites h3{
+#box_activites h3{
     padding: 15px;
 }
-.box_footer {
+
+/*------------------------------------------------footer------------------------------------------------------*/
+#box_footer {
     margin-top: 60px;
     background-color: #F2F2F2 ;
     display: flex;
@@ -423,32 +476,40 @@ main{
     justify-content: flex-start;
     align-items: center;
 }
-.box_footer p{
+
+#box_footer p{
     line-height: 35px;
 }
-.box_a_propos{
+
+#box_a_propos{
     margin: 40px 0 0 40px; 
     padding-right: 160px;
 }
-.box_nos_hébergements{
+
+#box_nos_hébergements{
     padding-right: 300px;
     
 }
+
 @media screen and (max-width:1280px) {
-    .box_hébergements{
+/*--------------------------------------------section hébergements------------------------------------*/
+    #box_hébergements{
         min-width: none;
         width: 80%;
     }
-    .box_populaires{
+/*--------------------------------------------aside populaires-----------------------------------------*/
+    #box_populaires{
         margin-top: 30px;
         width: 80%;
     }
-    .box_populaires_liens{
+
+    #box_populaires_liens{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;   
     }
+
     .box_liens {
         display: flex;
         flex-direction: column;
@@ -457,99 +518,126 @@ main{
         height: 250px;
 
     }
+
     .photo_populaires_liens{
         width: 98%;
         height: 60%;
         border-radius: 15px 15px 0 0;
     }
+
     .texte_populaires{
         height: 40%;
     }
-    .box_footer{
-        justify-content: space-between;
 
+/*----------------------------------------------footer------------------------------------------------------*/
+    #box_footer{
+        justify-content: space-between;
     }
-    .box_a_propos{
-        padding: 0;
-    }    
-    .box_nos_hébergements{
+
+    #box_a_propos{
         padding: 0;
     }
+
+    #box_nos_hébergements{
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
+/*-------------------------------------------font------------------------------------------------------------*/
     h1{
         font-size: 50px;
         margin: 0 0 20px 50px;
         width: 80%;
     }
+
     h2{
         font-size: 55px;
     }
+
     h3{
         font-size: 40px ;
     }
+
     p{
         font-size: 20px;
     }
+
     a{
         font-size: 40px;
     }
+
+/*-----------------------------------partie logo et menu---------------------------------------------------*/
     #logo_en-tête{
         width: 60%;
     }
+
     .mobile_en-tête{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     .mobile_nav{
         display: none;
-        width: 100%;
-        
+        width: 100%;    
     }
+
     ul{
        list-style-type: none; 
     }
+
     #s_inscrire{
         padding-right:100px ;
     }
+
     .menu_mobile{
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;   
     }
+
     .barre_bleu{
         width: 100%;
         padding-bottom: 30px;
         border-bottom: 2px solid #F2F2F2;
     }
+
     .barre_bleu:hover{
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
         border-top: 0;
     }
+
     #en_plein{
         margin: 0 0 60px 50px;
 
     }
-    .box_recherche{
+    
+
+/*-----------------------------------------section recherche---------------------------------------------------*/
+    #box_recherche{
         width: 95%;
         height: 100px;
         margin-left: 50px;
     }
+
     #formulaire{
         width: 100%;
         justify-content: space-between;
     }
+
     label{
         width: 10%;
     }
+
     #maps_marker{
         font-size: 40px;
         padding:30px 20px 20px 30px; 
     }
+
     #localisation{
         width: 80%;
         font-size: 40px;
@@ -559,6 +647,7 @@ main{
     .bouton_recherche{
         display: none;
     }
+
     #bouton{
         display: inherit;
         padding: 30px 0 30px 30px ;
@@ -568,18 +657,22 @@ main{
         width: 10%;
         border-radius: 0 10px 10px 0 ;
         border: none;
-
     }
+
+/*------------------------------------------section filtres---------------------------------------------------*/
     .box_filtres{
         flex-direction: column;
     }
+
     #filtres {
         font-size: 30px;
         height: 50px;
-    } 
+    }
+
     .box_filtres{
         height: 620px;
     }
+
     #filtres_mobile{
         display: flex;
         flex-wrap: wrap;
@@ -588,6 +681,7 @@ main{
         width: 100%;
         height: 500px;
     }
+
     .lien_eco{
         width: 370px;
         height: 60px;
@@ -596,23 +690,27 @@ main{
         margin-right: 0;
         margin-left: 0;
     }
+
     #logo_eco{
         width: 50px;
         height: 50px;
         border-radius: 50px;
     }
+
     .lien_familial{
         width: 280px;
         height: 60px;
         border-radius: 50px;
         padding: 0 0 20px 0;
     }
+
     #logo_familial{
         width: 50px;
         height: 50px;
         text-align: center; 
         border-radius: 50px;
     }
+
     .lien_romantique{
         width: 360px;
         height: 60px;
@@ -620,46 +718,54 @@ main{
         margin: 0 100px 0 0;
         padding: 0 0 20px 0;
     }
+
     #logo_romantique{
         width: 50px;
         height: 50px;
         text-align: center; 
         border-radius: 50px; 
     }
+
     .lien_animaux{
         width: 500px;
         height: 60px;
         border-radius: 50px;
         padding: 0 0 20px 0;
     }
+
     #logo_animaux{
         width: 50px;
         height: 50px;
         text-align: center; 
         border-radius: 50px;
     }
+
     .fas.fa-info {
         width: 50px;
         height: 50px;
         font-size: 15px;
     }
+
     .information{
         margin-left: 50px;
     }
-    
-    .box_populaires{
+/*--------------------------------------------------aside populaires------------------------------------------*/
+    #box_populaires{
         order: 1;
         border-radius: 0;
         width: 100%;
         padding-left: 50px;
     }
+
     .fas.fa-chart-line{
         font-size: 50px;
         padding-top: 50px;    
     }
-    .box_populaires_liens{
+
+    #box_populaires_liens{
         flex-direction: column;
     }
+
     .box_liens{
         width: 95%;
         height: 350px;
@@ -667,111 +773,141 @@ main{
         flex-direction: row;
         border-radius: 30px;
     }
+
     .photo_populaires_liens{
         width: 40%;
         height: 92%;
         border-radius: 30px 0 0 30px;
         padding: 15px;
     }
+
     .texte_populaires{
         height: 100%;
         width: 55%;
     }
+
     .fas.fa-star{
         font-size: 25px;
     }
-    .box_hébergements{
+/*------------------------------------------------section hébergements---------------------------------------*/
+    #box_hébergements{
         order: 2;
         background-color: white;
         width: 100%;
     }
-    .box_hébergements_à_ville{
+
+    #box_hébergements_à_ville{
         flex-direction: column;
         padding-left: 20px;
     }
+
     .box_hébergements_liens{
         width: 95%;
         height: 450px;
         border-radius: 30px;
     }
+
     .photo_hébergements_liens{
         width: 97%;
         padding: 10px;
         border-radius: 30px 30px 0 0 ;
     }
-    .hébergements_populaires p{
+
+    #hébergements_populaires p{
         font-size: 30px;
     }
+
     .texte_hébergements{
         padding-bottom: 10px;
     }
-    .afficher_plus{
+
+    #afficher_plus{
         margin-top: 60px;
     }
+
+/*-------------------------------------------aside activites---------------------------------------------------*/
     #activites{
         margin-right:60px;
     }
-    .box_activites{
+
+    #box_activites{
         width: 100%;
         flex-direction: column;
         margin-left: 60px;
     }
+
     .box_activites_hauteur{
         width: 90%;
         border-radius: 30px;
         margin-top: 50px;
     }
+
     .photo_activites_hauteur{
         width: 100%;
         height: 75%;
         border-radius: 30px 30px 0 0;
     }
-    .box_activites h3{
+
+    #box_activites h3{
         padding: 30px 0 0 30px;
     }
+
     .box_superposer{
         width: 90%;
         height: 1000px;
-        margin-top: 50px;
-        
+        margin-top: 50px;        
     }
+
     .box_activites_largeur1{
         height: 470px;
         margin-bottom: 50px;
         border-radius: 30px ;
     }
+
     #photo_fort_de_promègues{
         height: 75%;
         border-radius: 30px 30px 0 0 ;
     }
+
     #photo_îles_du_frioul{
         height: 75%;
         border-radius: 30px 30px 0 0;
     }
+
     .box_activites_largeur2{
         margin-bottom: 50px;
         border-radius: 30px;
         height: 470px;
     }
+
     .photo_activites_largeur2{
         height: 75%;
         border-radius: 30px 30px 0 0;
     }
-    .box_footer{
+
+/*--------------------------------------------------footer----------------------------------------------------*/
+    #box_footer{
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
     }
-    .box_a_propos{
-        margin: 70px 0 60px 90px ;
+
+    #box_a_propos{
+        height: 400px ;
+        margin-left: 90px;
     }
-    .box_nos_hébergements{
+
+    #box_nos_hébergements{
         margin: 0 0 60px 90px ;
     }
-    .box_assistance{
+
+    #box_assistance{
         margin: 0 0 60px 90px ;
     }
-    .box_footer p{
+
+    #box_footer p{
         line-height: 80px;
+        font-size: 35px;
     }
+
 }

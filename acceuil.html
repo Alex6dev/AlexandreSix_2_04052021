@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> <!--partie head de la page-->
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/569d03ca6c.js" crossorigin="anonymous"></script>
@@ -9,9 +9,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header> <!--partie logo et menu-->
             <div class="en-tête">
-                <div class="box_logo">
+                <div id="box_logo"> 
                     <a href="acceuil.html" ><img src="logo/Reservia@3x.png" alt="logo Reservia" class="mobile_en-tête" id="logo_en-tête"></a>            
                 </div>
                 <nav id="box_menu">
@@ -22,31 +22,31 @@
                     </ul>
                 </nav>
             </div>
-            <nav >
+            <nav > <!-- menu visible sur mobile-->
                 <ul class="menu_mobile">
                     <li class="barre_bleu"><a href="#hebergements"class="mobile_nav_visible">Hébergements</a></li>
                     <li class="barre_bleu"><a href="#activites" class="mobile_nav_visible">Activités</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
+        <main> <!--partie recherche ville + filtres + hébergements + populaires+ activites-->
+            <section> <!--section recherche ville-->
                 <h1>
                     Trouvez votre hébergement pour des vacances de rêve
                 </h1>
                 <p id="en_plein">En plein centre ville ou en pleine nature</p>
-                <div class="box_recherche">
+                <div id="box_recherche">
                     <form method="post" action="" class="formulaire" id="formulaire"> <!-- rajouter lien vers back-end -->
                         <label for="localisation"><i class="fas fa-map-marker-alt" id="maps_marker"></i></label>
                         <input type="text" name="localisation" id="localisation" value="Marseille, France" >
-                        <input type="button" value="Recherche" class="bouton_recherche" >
-                        <bouton class="formulaire" id="bouton">
+                        <input type="button" value="Recherche" class="bouton_recherche" ><!--bouton visible PC et tablette-->
+                        <bouton class="formulaire" id="bouton"><!--bouton visible mobile , A lier vers le back-end-->
                             <i class="fas fa-search"></i>
                         </bouton>
                     </form>
                 </div>
             </section>
-            <section>
+            <section> <!--section filtres-->
                 <div class="box_filtres" >
                     <p id="filtres">Filtres</p>
                     <div id="filtres_mobile">
@@ -59,12 +59,12 @@
                 <p class="information" ><i class="fas fa-info"></i>
                     Plus de 500 logements sont disponibles dans cette ville
                 </p>
-            </section>
-            <div class="hébergements_populaires">
-                <article class="box_hébergements">
+            </section> <!--section hébergements + populaires-->
+            <div id="hébergements_populaires">
+                <article id="box_hébergements"> <!--section hébergements-->
                     <h2 id="hébergements">Hébergements à Marseille</h2>
-                    <div class="box_hébergements_à_ville ">
-                        <a href="" class="box_hébergements_liens"> <!--ajouter lien vers page de l'auberge de la cannebiére-->
+                    <div id="box_hébergements_à_ville">
+                        <a href="" class="box_hébergements_liens"> <!--ajouter lien vers page de l'auberge la cannebiére-->
                             <img src="photo/hébergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo auberge de le cannbière" class="photo_hébergements_liens">
                             <div class="texte_hébergements">
                                 <h3>Auberge la Cannebière</h3>
@@ -136,15 +136,15 @@
                             </div>
                         </a>
                     </div>
-                    <p class="afficher_plus">Afficher plus</p>
+                    <p id="afficher_plus">Afficher plus</p>
                 </article>
-                <aside class="box_populaires" >
-                    <div class="box_titre_populaires">
+                <aside id="box_populaires" > <!--section populaires-->
+                    <div id="box_titre_populaires">
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <div class="box_populaires_liens">
-                        <div class="box_liens">
+                    <div id="box_populaires_liens">
+                        <a href="" class="box_liens"><!--ajouter lien vers page de l'hôtel le soleil du matin-->
                             <img src="photo/hébergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" class="photo_populaires_liens">
                             <div class="texte_populaires">
                                 <div>
@@ -157,8 +157,8 @@
                                     <i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="box_liens">
+                        </a>
+                        <a href="" class="box_liens"> <!--ajouter lien vers page de au coeur de l'eau chambre d'hôtes-->
                             <img src="photo/hébergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l'eau Chambres d'hôtes" class="photo_populaires_liens">
                             <div class="texte_populaires">
                                 <div>
@@ -171,8 +171,8 @@
                                     <i class="fas fa-star" id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_gris"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="box_liens">
+                        </a>
+                        <a href="" class="box_liens"> <!--ajouter lien vers page de l'hôtel tout bleu et blanc-->
                             <img src="photo/hébergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" class="photo_populaires_liens">
                             <div class="texte_populaires">
                                 <div>
@@ -185,13 +185,13 @@
                                     <i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_bleu"></i><i class="fas fa-star"id="star_gris"></i>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </aside>
             </div>
-            <aside >
+            <aside > <!--section activites-->
                 <h2 id="activites" >Activités à Marseille</h2>
-                <div class="box_activites">
+                <div id="box_activites">
                     <div class="box_activites_hauteur">
                         <img src="photo/activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du vieux port" class="photo_activites_hauteur">
                         <h3>Vieux Port</h3>
@@ -223,9 +223,9 @@
                 </div>
             </aside>
         </main>
-        <footer>
-            <div class="box_footer">
-                <div class="box_a_propos">
+        <footer> <!--partie footer-->
+            <div id="box_footer">
+                <div id="box_a_propos">
                     <h3>
                         A propos
                     </h3>
@@ -235,7 +235,7 @@
                         Données et confidentialité
                     </p>
                 </div >
-                <div class="box_nos_hébergements">
+                <div id="box_nos_hébergements">
                     <h3>
                         Nos hébergements
                     </h3>
@@ -244,7 +244,7 @@
                         Soumettre votre hôtel
                     </p>
                 </div>
-                <div class="box_assistance">
+                <div id="box_assistance">
                     <h3>
                         Assistance  
                     </h3>
