@@ -95,12 +95,11 @@ main{
 
 }
 #formulaire {
-    width: 280px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     vertical-align: top;
-    width: 275px;
+    width: 290px;
 }
 
 #maps_marker{
@@ -114,7 +113,7 @@ main{
     flex-direction: row;
     justify-content: center;
     background-color: #F2F2F2 ;
-    width: 290px;
+    width: 270px;
     height: 35px;
     border-radius: 10px ;
     
@@ -123,6 +122,7 @@ main{
 #localisation { 
     border: #F2F2F2 solid 1px ;
     padding-left: 15px;
+    width: 150px;
 }
 
 .bouton_recherche{
@@ -367,8 +367,7 @@ main{
     height: 140px ;
     margin-top: 15px;
     margin-left: 2%;
-    
-
+    box-shadow: 1px 1px 20px 1px #e5e6e7de;
 }
 
 .photo_populaires_liens {
@@ -491,16 +490,46 @@ main{
     
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1024px) and (min-width: 761px){
+/*------------------------------------------font--------------------------------------------------*/
+    h1{
+        font-size: 25px;
+    }
+/*---------------------------------------------menu------------------------------------------------*/
+    #box_menu{
+        width: 50%;
+    }
+/*-------------------------------------------filtre--------------------------------------------------*/
+    #filtres_mobile{
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .lien_eco, .lien_familial, .lien_romantique, .lien_animaux {
+        padding: 0;
+        height: 50px;
+    }
+    .lien_eco{
+        width: 180px;
+    }
+    .lien_familial{
+        width: 150px;
+    }
+    .lien_romantique{
+        width: 170px;
+    }
+
 /*--------------------------------------------section hébergements------------------------------------*/
     #box_hébergements{
         min-width: none;
-        width: 80%;
+        width: 90%;
+        align-items: center;
     }
 /*--------------------------------------------aside populaires-----------------------------------------*/
     #box_populaires{
         margin-top: 30px;
-        width: 80%;
+        width: 90%;
     }
 
     #box_populaires_liens{
@@ -516,18 +545,34 @@ main{
         justify-content: space-between;
         width: 28%;
         height: 250px;
+        margin-left: 0;
 
     }
 
     .photo_populaires_liens{
-        width: 98%;
+        width: 95%;
         height: 60%;
+        
         border-radius: 15px 15px 0 0;
     }
 
     .texte_populaires{
         height: 40%;
     }
+/*---------------------------------------------activites----------------------------------------------------*/
+    
+    .box_activites_hauteur{
+        width: 40%;
+        height: 450px;
+        margin-top: 20px;
+    }
+
+    .box_superposer{
+        width: 40%;
+        margin-top: 20px;
+    }
+
+
 
 /*----------------------------------------------footer------------------------------------------------------*/
     #box_footer{
@@ -536,6 +581,7 @@ main{
 
     #box_a_propos{
         padding: 0;
+        
     }
 
     #box_nos_hébergements{
@@ -544,28 +590,30 @@ main{
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 760px ) {
 /*-------------------------------------------font------------------------------------------------------------*/
     h1{
-        font-size: 50px;
-        margin: 0 0 20px 50px;
-        width: 80%;
+        font-size: 25px;
+        margin: 0 0 0 15px;
     }
 
     h2{
-        font-size: 55px;
+        font-size: 23px;
     }
 
     h3{
-        font-size: 40px ;
+        font-size: 20px ;
     }
 
     p{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     a{
-        font-size: 40px;
+        font-size: 20px;
+    }
+    html{
+        width: 100%;
     }
 
 /*-----------------------------------partie logo et menu---------------------------------------------------*/
@@ -589,7 +637,8 @@ main{
     }
 
     #s_inscrire{
-        padding-right:100px ;
+        padding-top: 0;
+        
     }
 
     .menu_mobile{
@@ -597,6 +646,7 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: space-around;   
+        padding: 0;
     }
 
     .barre_bleu{
@@ -612,35 +662,39 @@ main{
     }
 
     #en_plein{
-        margin: 0 0 60px 50px;
+        margin: 20px 0 30px 15px;
 
+    }
+    main {
+        margin: 0;
     }
     
 
 /*-----------------------------------------section recherche---------------------------------------------------*/
     #box_recherche{
         width: 95%;
-        height: 100px;
-        margin-left: 50px;
+        height: 50px;
+        margin-left: 15px;
     }
 
     #formulaire{
         width: 100%;
+
         justify-content: space-between;
     }
 
     label{
-        width: 10%;
+        width: 15%;
+        text-align: center;
     }
 
     #maps_marker{
-        font-size: 40px;
-        padding:30px 20px 20px 30px; 
+        font-size: 25px; 
     }
 
     #localisation{
         width: 80%;
-        font-size: 40px;
+        font-size: 20px;
         font-weight: 400;
     }
     
@@ -649,28 +703,26 @@ main{
     }
 
     #bouton{
-        display: inherit;
-        padding: 30px 0 30px 30px ;
-        font-size: 40px;
+        display: inline;
+        font-size: 20px;
         background-color: #0065FC;
         color: white;
-        width: 10%;
-        border-radius: 0 10px 10px 0 ;
+        width: 15%;
+        border-radius: 10px ;
         border: none;
+        text-align: center;
+        padding-top: 12px;
     }
 
 /*------------------------------------------section filtres---------------------------------------------------*/
     .box_filtres{
         flex-direction: column;
+        height: 300px;
+        margin-left: 15px;
     }
 
     #filtres {
-        font-size: 30px;
-        height: 50px;
-    }
-
-    .box_filtres{
-        height: 620px;
+        font-size: 23px;
     }
 
     #filtres_mobile{
@@ -679,87 +731,96 @@ main{
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        height: 500px;
+        height: 250px;
     }
-
-    .lien_eco{
-        width: 370px;
+    .lien_eco, .lien_familial, .lien_romantique, .lien_animaux{
         height: 60px;
+        padding: 0 ;
+        
+    }
+    .lien_eco{
+        width: 195px;
         border-radius: 50px;
-        padding: 0 0 20px 0 ;
         margin-right: 0;
         margin-left: 0;
     }
-
     #logo_eco{
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 40px;
         border-radius: 50px;
+        padding: 20px 0 0 0;
+        text-align: center;
+        margin: 0 10px 0 0 ;
     }
 
     .lien_familial{
-        width: 280px;
-        height: 60px;
+        width: 160px;
         border-radius: 50px;
-        padding: 0 0 20px 0;
+        margin: 0;
     }
 
     #logo_familial{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         text-align: center; 
         border-radius: 50px;
+        padding: 20px 10px 0 10px;
     }
 
     .lien_romantique{
-        width: 360px;
-        height: 60px;
+        width: 230px;
         border-radius: 50px;
-        margin: 0 100px 0 0;
-        padding: 0 0 20px 0;
     }
 
     #logo_romantique{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         text-align: center; 
         border-radius: 50px; 
+        padding: 20px 10px 0 10px;
     }
 
     .lien_animaux{
-        width: 500px;
-        height: 60px;
+        width: 280px;
         border-radius: 50px;
-        padding: 0 0 20px 0;
     }
 
     #logo_animaux{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         text-align: center; 
         border-radius: 50px;
+        padding: 20px 10px 0 10px;
     }
 
     .fas.fa-info {
-        width: 50px;
-        height: 50px;
-        font-size: 15px;
+        width: 30px;
+        height: 25px;
+        text-align: center;
+        padding-top: 3px;
+    }
+    .information{
+        margin-left: 15px;
     }
 
-    .information{
-        margin-left: 50px;
-    }
+    
 /*--------------------------------------------------aside populaires------------------------------------------*/
+    #hébergements_populaires p{
+        font-size: 20px;
+    }
     #box_populaires{
         order: 1;
         border-radius: 0;
         width: 100%;
-        padding-left: 50px;
+        padding: 10px 0 0 10px;
+        height: 660px;
     }
-
+    #box_titre_populaires{
+        width: 95%;
+    }
     .fas.fa-chart-line{
-        font-size: 50px;
-        padding-top: 50px;    
+        font-size: 25px;
+        padding-top: 20px;    
     }
 
     #box_populaires_liens{
@@ -767,8 +828,8 @@ main{
     }
 
     .box_liens{
-        width: 95%;
-        height: 350px;
+        width: 97%;
+        height: 170px;
         margin-left: 0;
         flex-direction: row;
         border-radius: 30px;
@@ -776,9 +837,9 @@ main{
 
     .photo_populaires_liens{
         width: 40%;
-        height: 92%;
+        height: 93%;
         border-radius: 30px 0 0 30px;
-        padding: 15px;
+        padding: 7px;
     }
 
     .texte_populaires{
@@ -787,35 +848,38 @@ main{
     }
 
     .fas.fa-star{
-        font-size: 25px;
+        font-size: 15px;
     }
 /*------------------------------------------------section hébergements---------------------------------------*/
     #box_hébergements{
         order: 2;
         background-color: white;
         width: 100%;
+        padding: 0;
     }
-
+    #hébergements{
+        padding-left: 15px;
+    }
     #box_hébergements_à_ville{
         flex-direction: column;
-        padding-left: 20px;
+        padding-left: 15px;
     }
 
     .box_hébergements_liens{
         width: 95%;
-        height: 450px;
+        height: 300px;
         border-radius: 30px;
+        padding: 0;
     }
 
     .photo_hébergements_liens{
         width: 97%;
-        padding: 10px;
+        height: 60%;
+        padding: 5px;
         border-radius: 30px 30px 0 0 ;
     }
 
-    #hébergements_populaires p{
-        font-size: 30px;
-    }
+   
 
     .texte_hébergements{
         padding-bottom: 10px;
@@ -827,17 +891,18 @@ main{
 
 /*-------------------------------------------aside activites---------------------------------------------------*/
     #activites{
-        margin-right:60px;
+        margin: 0 0 0 15px;
     }
 
     #box_activites{
         width: 100%;
         flex-direction: column;
-        margin-left: 60px;
+        margin-left: 20px;
     }
 
     .box_activites_hauteur{
         width: 90%;
+        height: 300px ;
         border-radius: 30px;
         margin-top: 50px;
     }
@@ -854,12 +919,12 @@ main{
 
     .box_superposer{
         width: 90%;
-        height: 1000px;
+        height: 650px;
         margin-top: 50px;        
     }
 
     .box_activites_largeur1{
-        height: 470px;
+        height: 300px;
         margin-bottom: 50px;
         border-radius: 30px ;
     }
@@ -877,7 +942,7 @@ main{
     .box_activites_largeur2{
         margin-bottom: 50px;
         border-radius: 30px;
-        height: 470px;
+        height: 300px;
     }
 
     .photo_activites_largeur2{
@@ -893,21 +958,27 @@ main{
     }
 
     #box_a_propos{
-        height: 400px ;
+        height: 180px ;
         margin-left: 90px;
+        margin: 40px 0 0 30px;
+        padding: 0;
     }
 
     #box_nos_hébergements{
-        margin: 0 0 60px 90px ;
+        height: 150px;
+        margin: 0 0 0 30px ;
+        padding: 0;
     }
 
     #box_assistance{
-        margin: 0 0 60px 90px ;
+        height: 150px;
+        margin: 0 0 0 30px ;
+        padding: 0;
     }
 
     #box_footer p{
-        line-height: 80px;
-        font-size: 35px;
+        line-height: 35px;
+        font-size: 20px;
     }
 
 }
