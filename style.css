@@ -1,5 +1,4 @@
-
-/*---------------------------------------------partie font------------------------------------------------*/
+/*---------------------------------------------partie_font------------------------------------------------*/
 p {
     font-family: "Raleway",Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -30,11 +29,11 @@ a{
     width: 50%;
 }
 
-#logo_en-tête{
+#logo_en-tete{
     width: 15%;
 }
 
-.en-tête {
+.en-tete {
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
@@ -71,7 +70,9 @@ nav a {
     width: 150px;
     color:inherit
 }
-
+nav li{
+    border: 2px solid white;
+}
 nav li:hover{
     border-top: 2px solid #0065FC;
     color:#0065FC;
@@ -134,6 +135,9 @@ main{
 }
 
 #bouton{
+    display: none;
+}
+.fas.fa-search{
     display: none;
 }
 
@@ -257,7 +261,7 @@ main{
 }
 
 /*-----------------------------------section hébergements + populaires---------------------------------------*/
-#hébergements_populaires {
+#hebergements_populaires {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -265,34 +269,34 @@ main{
 }
 
 /*------------------------------------------section hébergements---------------------------------------------*/
-#box_hébergements {
+#box_hebergements {
     background-color: #F2F2F2 ;
     width: 60% ;
     border-radius: 15px;
     padding: 15px 15px 15px 35px;
 }
 
-#box_hébergements_à_ville{ 
+#box_hebergements_a_ville{ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
-#box_hébergements_à_ville p{
+#box_hebergements_a_ville p{
     margin: 0;
     padding-left: 20px;
 }
 
-#box_hébergements_à_ville h3{
+#box_hebergements_a_ville h3{
     padding-left: 20px;
 }
 
-.étoiles{
+.etoiles{
     padding-left: 20px;
 }
 
-.box_hébergements_liens {
+.box_hebergements_liens {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -306,7 +310,7 @@ main{
 
 }
 
-.photo_hébergements_liens {
+.photo_hebergements_liens {
     
     width: 99.5%;
     height: 60%;
@@ -316,18 +320,18 @@ main{
 
 }
 
-.texte_hébergements{
+.texte_hebergements{
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#star_bleu {
+.star_bleu {
     color:#0065FC;
 }
 
-#star_gris{
+.star_gris{
     color:#F2F2F2;
 }
 
@@ -435,12 +439,12 @@ main{
     border-radius: 15px 15px 0 0;
 } 
 
-#photo_fort_de_promègues{
+#photo_fort_de_promegues{
     height: 196px;
 
 }
 
-#photo_îles_du_frioul{
+#photo_iles_du_frioul{
     height: 116px;
 }
 
@@ -485,7 +489,7 @@ main{
     padding-right: 160px;
 }
 
-#box_nos_hébergements{
+#box_nos_hebergements{
     padding-right: 300px;
     
 }
@@ -521,8 +525,7 @@ main{
     }
 
 /*--------------------------------------------section hébergements------------------------------------*/
-    #box_hébergements{
-        min-width: none;
+    #box_hebergements{
         width: 90%;
         align-items: center;
     }
@@ -584,7 +587,7 @@ main{
         
     }
 
-    #box_nos_hébergements{
+    #box_nos_hebergements{
         padding: 0;
     }
 
@@ -617,11 +620,11 @@ main{
     }
 
 /*-----------------------------------partie logo et menu---------------------------------------------------*/
-    #logo_en-tête{
+    #logo_en-tete{
         width: 60%;
     }
 
-    .mobile_en-tête{
+    .mobile_en-tete{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -711,7 +714,9 @@ main{
         border-radius: 10px ;
         border: none;
         text-align: center;
-        padding-top: 12px;
+    }
+    .fas.fa-search{
+        display: block;
     }
 
 /*------------------------------------------section filtres---------------------------------------------------*/
@@ -805,7 +810,7 @@ main{
 
     
 /*--------------------------------------------------aside populaires------------------------------------------*/
-    #hébergements_populaires p{
+    #hebergements_populaires p{
         font-size: 20px;
     }
     #box_populaires{
@@ -851,28 +856,28 @@ main{
         font-size: 15px;
     }
 /*------------------------------------------------section hébergements---------------------------------------*/
-    #box_hébergements{
+    #box_hebergements{
         order: 2;
         background-color: white;
         width: 100%;
         padding: 0;
     }
-    #hébergements{
+    #hebergements{
         padding-left: 15px;
     }
-    #box_hébergements_à_ville{
+    #box_hebergements_a_ville{
         flex-direction: column;
         padding-left: 15px;
     }
 
-    .box_hébergements_liens{
+    .box_hebergements_liens{
         width: 95%;
         height: 300px;
         border-radius: 30px;
         padding: 0;
     }
 
-    .photo_hébergements_liens{
+    .photo_hebergements_liens{
         width: 97%;
         height: 60%;
         padding: 5px;
@@ -881,7 +886,7 @@ main{
 
    
 
-    .texte_hébergements{
+    .texte_hebergements{
         padding-bottom: 10px;
     }
 
@@ -929,12 +934,12 @@ main{
         border-radius: 30px ;
     }
 
-    #photo_fort_de_promègues{
+    #photo_fort_de_promegues{
         height: 75%;
         border-radius: 30px 30px 0 0 ;
     }
 
-    #photo_îles_du_frioul{
+    #photo_iles_du_frioul{
         height: 75%;
         border-radius: 30px 30px 0 0;
     }
@@ -964,7 +969,7 @@ main{
         padding: 0;
     }
 
-    #box_nos_hébergements{
+    #box_nos_hebergements{
         height: 150px;
         margin: 0 0 0 30px ;
         padding: 0;
