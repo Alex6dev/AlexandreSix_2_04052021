@@ -6,6 +6,8 @@ Vacation planning company with accommodations and activities
 - Demande: 
 Prototype creation of the future responsive website (navigation, button, search fields,...)
 
+The resourceClient folder corresponds to the resource provided by the client
+
 
 Home page:
 <img src='https://github.com/Alex6dev/AlexandreSix_2_04052021/blob/master/photo/screens/screenReserviaHome.png' alt="screenshot"/>
@@ -16,6 +18,7 @@ Home page:
 ### 2-1 Technologies and Prerequisites
 - HTML
 - CSS
+- [Font Awesome](https://fontawesome.com/)
 
 ### 2-2 Launching the project
 
